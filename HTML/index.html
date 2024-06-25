@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upGrad</title>
+   <!--<link href="./index.css" rel="stylesheet"> -->
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            background-image: url(./images/lz.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #form{
+            background-color: black;
+            color:white;
+            width: 400px;
+            height: 200px;
+            text-align: center;
+            margin: 300px 450px ;
+            padding-top: 100px;
+            border-radius: 25px;
+            border-style:  dotted;
+            border-color: red;
+       
+
+        }
+    
+.formEle{
+    margin: 10px;
+}
+
+#navBar{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 700px;
+    
+}
+
+#nav{
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+ li{
+    list-style: none;
+    margin-top: 15px;
+   
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+    </style>
+
+</head>
+<body>
+
+ <nav id="nav">
+    <ul>
+        <li><img src="./images/logo.png" height="40px" width="40px"></li>
+    </ul>
+   <ul  id="navBar">
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style" target="_blank">About</a></li>
+      <li><a href="https://github.com/itsmonikajangid" target="_blank">Contact Us</a></li>
+      <li> Log in</li>
+      <li> Sign Up</li>
+    </ul>
+</nav>
+
+
+
+
+
+
+
+<div id="form">
+    <form action="action.php" method="get">
+
+        <label>UserName:</label><input type="text" id="username " class="formEle" name="userName" value="" placeholder="userName"
+            required><br>
+
+        <label>Skills:</label>
+        <label>Java:</label>
+        <input type="checkbox" id="java" name="java" value="">
+        <label>C++:</label>
+        <input type="checkbox" id="c++" name="c++" value="">
+          
+        <br>
+        <label>Gender</label>
+        
+        <input type="radio"  id="gender1" name="gender" value="male" class="formEle">
+        <label for="gender1">Male:</label>    
+        <input type="radio" id="gender2" name="gender" value="Female" class="formEle">
+        <label for="gender2">Female:</label>
+
+        <br>
+        <label>City</label>
+        <select id="city" name="city" class="formEle">
+            <option value="">Pune</option>
+            <option value="">Rajasthan</option>
+            <option value="">Bokaro</option>
+        </select>
+
+
+        <button>Submit</button>
+
+
+    </form>
+
+  
+
+</div>
+</body>
+
+</html>
